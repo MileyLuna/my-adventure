@@ -20,6 +20,7 @@ I would like to change the whole view and implement a interactive 'file' folder/
 
 - Run `npm install`
 - Run `npm run dev`
+- Navigate to  http://localhost:8080
 
 
 If package.jason does not have react, redux, and logger:
