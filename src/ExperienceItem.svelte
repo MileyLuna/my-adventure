@@ -34,9 +34,9 @@
     .modal {
         padding: 10px;
         border-radius: 10px;
-        max-width: 400px;
+        max-width: 50%;
         margin: 10% auto;
-        text-align: center;
+        text-align: left;
         background: rgb(252, 233, 233);
     }
     .box {
