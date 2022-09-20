@@ -1,8 +1,8 @@
 <script>
-    let src = '../public/image/home.png';
-    let src1 = '../public/image/add.png';
-    let src2 = '../public/image/edit.png';
-
+    let src = 'image/home.png';
+    let src1 = 'image/add.png';
+    let src2 = 'image/edit.png';
+    let img; 
 </script>
 
 
@@ -21,7 +21,14 @@
     </p> 
 
     <p> Home Page:</p>
-    <img {src} alt='home'/>
+    <img {src} bind:this={img} width={46} height={46} alt='home'/>
     <img {src1} alt='add'/>
     <img {src2} alt='edit'/>
 </div>
+
+<style>
+    img {
+        width: 100%;
+        height:100%;
+    }
+</style>
