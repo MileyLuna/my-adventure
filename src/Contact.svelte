@@ -21,7 +21,7 @@
                 I am also open collaboration and freelance work.
                 <br />
                 <br />
-                Toolbox of skill sets and language aquired: 
+                My Toolbox:
             </p>
         </div>
 
@@ -76,11 +76,15 @@
             </div>
         </div>
 
-        <div>
-            <p></p>
-            <div class="email-link">
-                <a href="mailto:vangmaihlee@ymail.com">Say Hello</a>
-            </div>
+        <div class="email-container">
+            <h2>Get In Touch</h2>
+            <p>Don't be shy to send me a quick Hello or maybe a job or proposal. 
+                I am always looking for opportunity to grow, feel free to send
+                over tips, suggestions, and/or resources.
+            </p>
+            <a class="email-link" href="mailto:vangmaihlee@ymail.com"
+                >Say Hello</a
+            >
         </div>
     </div>
 </main>
@@ -88,8 +92,15 @@
 <style>
     main {
         color: grey;
-        line-height: 1.50em;
+        line-height: 1.5em;
         height: 100%;
+    }
+    .email-container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
     }
     .email-link {
         cursor: pointer;
