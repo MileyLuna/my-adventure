@@ -10,7 +10,7 @@
         <ul>
             {#each items as item}
                 <li class={activeTabValue === item.value ? "active" : ""}>
-                    <span on:click={handleClick(item.value)}>{item.label}</span>
+                    <span on:click={handleClick(item.value)}></span>
                 </li>
             {/each}
         </ul>
@@ -29,7 +29,7 @@
         width: 100%;
         height: 100%;
         position: fixed;
-        background: rgba(0, 0, 0, 0.8);
+        /* background: rgba(0, 0, 0, 0.8); */
     }
     .modal {
         padding: 10px;
@@ -37,12 +37,13 @@
         max-width: 50%;
         margin: 10% auto;
         text-align: left;
-        background: rgb(252, 233, 233);
+        color: gray;
+        /* background: rgb(252, 233, 233); */
     }
     .box {
         margin-bottom: 10px;
         padding: 40px;
-        border: 1px solid #dee2e6;
+        /* border: 1px solid #dee2e6; */
         border-radius: 0 0 0.5rem 0.5rem;
         border-top: 0;
     }
@@ -52,7 +53,8 @@
         padding-left: 0;
         margin-bottom: 0;
         list-style: none;
-        border-bottom: 1px solid #dee2e6;
+
+        /* border-bottom: 1px solid #dee2e6; */
     }
     li {
         margin-bottom: -1px;
@@ -60,11 +62,13 @@
 
     span {
         border: 1px solid transparent;
-        border-top-left-radius: 0.25rem;
-        border-top-right-radius: 0.25rem;
+        border-radius: 50%;
         display: block;
-        padding: 0.5rem 1rem;
+        margin-left: 2rem;
+        padding: .75rem .75rem;
         cursor: pointer;
+        background-color: aqua;
+
     }
 
     span:hover {

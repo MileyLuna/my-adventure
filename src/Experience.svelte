@@ -6,9 +6,9 @@
     import English from "./English.svelte";
     import Hca from "./Hca.svelte";
     import ExperienceItem from "./ExperienceItem.svelte";
-import Rca from "./Rca.svelte";
+    import Rca from "./Rca.svelte";
 
-    export let showExp = false;
+    // export let showExp = false;
 
     let items = [
         { label: "Prime Digital Academy", value: 1, component: Software },
@@ -21,7 +21,7 @@ import Rca from "./Rca.svelte";
     ];
 </script>
 
-{#if showExp}
+<!-- {#if showExp} -->
 <ExperienceItem {items} on:click/>
-{/if}
+<!-- {/if} -->
 
