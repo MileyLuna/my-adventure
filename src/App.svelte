@@ -2,37 +2,21 @@
 	import About from "./About.svelte";
 	import Experience from "./Experience.svelte";
 	import Project from "./Project.svelte";
+	import Contact from "./Contact.svelte";
 
-	let showAbout = false;
-	let showExp = false;
-	let showPro = false;
 
-	let toggleAbout = () => {
-		showAbout = !showAbout;
-	};
-
-	let toggleExp = () => {
-		showExp = !showExp;
-	};
-
-	let togglePro = () => {
-		showPro = !showPro;
-	};
 </script>
 
-<!-- <About {showAbout} on:click={toggleAbout} />
-<Experience {showExp} on:click={toggleExp} />
-<Project {showPro} on:click={togglePro} /> -->
 <main>
-	<!-- <div on:click={toggleAbout} class="blank">about me</div>
-	<br />
-	<div on:click={toggleExp} class="blank">experience</div>
-	<br />
-	<div on:click={togglePro} class="blank">projects</div> -->
-
-	<div id="tab0" />
-	<div id="tab1" />
-	<div id="tab2" />
+	<div id="tab0">
+		<Contact />
+	</div>
+	<div id="tab1">
+		<Project />
+	</div>
+	<div id="tab2">
+		<!-- <Experience /> -->
+	</div>
 	<div id="tab3">
 		<About />
 	</div>
@@ -63,68 +47,86 @@
 	}
 	#tab0 {
 		width: 100vw;
-		background: black;
+		background: #000000;
 	}
 	#tab1 {
 		width: 95vw;
-		background: #31152b;
+		background: #2a0001;
 	}
 	#tab1::after {
-		content: "";
+		content: "PROJECTS";
 		position: absolute;
 		width: 5vw;
-		height: 25vh;
-		background: #31152b;
+		height: 20vh;
+		background: #2a0001;
 		border-radius: 0 20px 20px 0;
 		top: 75%;
 		right: -4vw;
+		padding: 20px 10px 20px 20px;
+		writing-mode: vertical-rl;
+		text-orientation: mixed;
+		font-size: 1.25em;
+
 	}
 	#tab2 {
 		width: 90vw;
-		background: #723147;
+		background: #450000;
 	}
 	#tab2::after {
-		content: "";
+		content: "EXPERIENCES";
 		position: absolute;
 		width: 5vw;
 		height: 25vh;
-		background: #723147;
+		background: #450000;
 		border-radius: 0 20px 20px 0;
 		top: 50%;
 		right: -4vw;
+		padding: 20px 10px 20px 20px;
+		writing-mode: vertical-rl;
+		text-orientation: mixed;
+		font-size: 1.25em;
+
+
 	}
 	#tab3 {
 		width: 85vw;
-		background: #cc4452;
+		background: #620000;
+
+		
 	}
 	#tab3::after {
-		content: "";
+		content: "JOURNEY";
 		position: absolute;
 		width: 5vw;
 		height: 25vh;
-		background: #cc4452;
+		background: #620000;
 		border-radius: 0 20px 20px 0;
 		top: 25%;
 		right: -4vw;
+		padding: 20px 10px 20px 20px;
+		writing-mode: vertical-rl;
+		text-orientation: mixed;
+		font-size: 1.25em;
 	}
 	#tab4 {
 		width: 80vw;
-		background: #e6b098;
+		background: #740303;
 	}
 	#tab4::after {
 		content: "";
 		position: absolute;
 		width: 5vw;
 		height: 25vh;
-		background: #e6b098;
+		background: #740303;
 		border-radius: 0 20px 20px 0;
 		top: 0;
 		right: -4vw;
+		
 	}
 
 	main {
 		text-align: center;
-		padding: 1em;
+		/* padding: 1em; */
 		max-width: 240px;
 		margin: 0 auto;
 	}
@@ -149,8 +151,8 @@
 	}
 
 	h1 {
-		background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
-		background-size: cover;
+		background-image: url(https://media4.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif?cid=790b761183d2fb0a0b37bb106da3228b203230b21214ab3b&rid=giphy.gif&ct=g);
+		background-size: 200px;
 		color: transparent;
 		-moz-background-clip: text;
 		-webkit-background-clip: text;

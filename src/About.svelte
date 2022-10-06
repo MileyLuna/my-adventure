@@ -1,60 +1,104 @@
 <script>
-    export let showAbout = false;
-
 </script>
 
-{#if showAbout}
-    <div class="backdrop"  on:click>
-        <div  class="modal">
-            <h2>My Journey</h2>
-            <h3>Degree Change</h3>
-            <p>
-                I come from a career background in Healthcare. The original goal
-                was to become a Occupational Therapist to physically heal and
-                imporve humans. However, through job shadowing I figured it was
-                not the right path for me.
-            </p>
-            <h3>Career Change</h3>
-            <p>
-                One month before graduation From UW - River Falls, I recieved an
-                offer with Optum and took the opportunity. The role required
-                multiple system usage and the frustration of it sparked my
-                curiosity in Software development.
-            </p>
-            <h3>Scavanger Hunt & Currently</h3>
-            <p>
-                On a software development/engineer scvanger hunt, I found Prime
-                Digital Academy Full Stack BootCamp and took the great
-                opportunity through MSP Hire Tech funding. Definetly a hate,
-                love relationship with coding - It's been very intense and
-                memerising.
-            </p>
-            <h3>Hopes & Dreams</h3>
-            <p>
-                I hope to continue being in the carrer field I fell deeply for -
-                Healthcare.
-            </p>
-        </div>
+<main>
+    <div class="modal">
+        <p id="one">
+            My original goal was to become an Occupational Therapist to
+            physically improve a human activity of daily living - hence my
+            previous careers in direct patient care. However, through job
+            shadowing I figured it was not the right path for me. I want a
+            dynamic workflow that provides continuos growth.
+        </p>
+        <p id="two">
+            One month before graduation from UW - River Falls, I took an
+            opportunity with Optum Advocacy Department. The role required
+            multiple system usage and the frustration of it sparked my curiosity
+            in software development.
+        </p>
+        <p id="three">
+            During the software development/engineer learning scvanger hunt, I
+            found Prime Digital Academy Full Stack BootCamp and took the great
+            opportunity through MSP Hire Tech. The Bootcamp was like a marriage;
+            full of hate and love. It was truly a wonderful, intense, and
+            memerising experience where I gained new friendship, knowledge, and
+            a new me.
+        </p>
+        <p id="four">
+            I am seeking for a work environment that will enable my growth in
+            software development and it's lifecycle, also guidiance in
+            using industries best pratices and incorperating accessibility
+            fundamentals.
+        </p>
     </div>
-{/if}
+</main>
 
 <style>
-    .backdrop {
+    main {
         width: 100%;
-        height: 100%;
-        position: fixed;
-        background: rgba(0, 0, 0, 0.8);
-    }
-    .modal {
-        padding: 10px;
-        border-radius: 10px;
-        max-width: 50%;
-        margin: 10% auto;
+        margin: auto;
         text-align: center;
-        background: rgb(252, 233, 233);
+        height: 100%;
+
     }
-    h2{
-        text-decoration: underline;
+    div {
+        margin: 5rem 0rem 0rem 20rem;
+        max-width: 60%;
+        height: 100%;
     }
 
+    p {
+        line-height: 1.75em;
+        border-top: 3px solid black;
+        margin: 0;
+        padding: 30px 50px 30px 50px;
+        position: relative;
+    }
+    #one,
+    #three {
+        border-right: 3px solid black;
+    }
+    #one::before {
+        content: "Degree";
+        left: 100%;
+        margin-left: -20px;
+    }
+    #two,
+    #four {
+        border-left: 3px solid black;
+    }
+    #two::before {
+        content: "Career";
+        right: 100%;
+        margin-right: -20px;
+    }
+    #three {
+        border-right: 3px solid black;
+    }
+    #three::before {
+        content: "Hunt";
+        left: 100%;
+        margin-left: -20px;
+    }
+
+    #four::before {
+        content: "Goals";
+        right: 100%;
+        margin-right: -20px;
+    }
+
+    p::before {
+        border-radius: 50%;
+        position: absolute;
+        height: 2em;
+        width: 4em;
+        line-height: 1em;
+        background-color: grey;
+        color: #34435e;
+        padding-top: 10px;
+
+    }
+    p:first-child {
+        border-top: 0;
+    }
 </style>

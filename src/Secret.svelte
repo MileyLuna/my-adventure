@@ -1,34 +1,31 @@
 <script>
-    let src = 'image/home.png';
-    let src1 = 'image/add.png';
-    let src2 = 'image/edit.png';
     let img; 
 </script>
 
 
 <div>
-
     <h1>Secret Stash</h1>
-    <p>This application is one of Prime Digital Academy capstone. This was a solo project built on 
-        a 2-week sprint.
-    </p>
-    <p>Secret Stash is recipe vault for registered users to contribute and 
-        share their recipe with other users. Users have access to make changes 
-        and delete their contributions.
-    </p>
     <p>
-    Technology used: HTML, JavaScript, Node.js, React, Redux, Saga, Material UI, CSS, PostgreSQL
+    This application allows registered users to add, edit, and delete their recipes. I hope to add in functionality to search,
+    add image, and favorite a recipe.
+    <br/>
+    Secret Stash was built on a 2-week sprint as Prime Digital Academy solo project. P.E.R.N Stack was utilized to make this application interactive. Intergrated some Material UI and Sweet Alerts.
     </p> 
 
-    <p> Home Page:</p>
-    <img {src} bind:this={img} width={46} height={46} alt='home'/>
-    <img {src1} alt='add'/>
-    <img {src2} alt='edit'/>
+    <div class="container">
+        <img src={'image/home.png'} bind:this={img} width={52} height={48} alt='home'/>
+        <img src={'image/add.png'} bind:this={img} width={52} height={48} alt='add'/>
+        <img src={'image/edit.png'} bind:this={img} width={52} height={48} alt='edit'/>
+    </div>
 </div>
 
 <style>
     img {
-        width: 100%;
-        height:100%;
+        width: 100px;
+        height: 100px;
+
+    }
+    div {  
+        margin-left: 12rem;
     }
 </style>
