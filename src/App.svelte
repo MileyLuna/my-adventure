@@ -22,7 +22,7 @@
 	</div>
 	<div id="tab4" class="title">
 		<h1>Miley Vang</h1>
-		<p>Software Developer</p>
+		<p>Software Developer | Tech Mom | First Generation | Foodie</p>
 	</div>
 </main>
 

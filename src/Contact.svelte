@@ -11,80 +11,75 @@
 
 <main>
     <div class="container">
-        <div class="inner-container">
-            <h2>Hire Me!</h2>
-            <p>
-                I am actively looking for full-time back-end software developer
-                role. And no, I don't dislike the front-end I am just not as
-                artistic. I don't mind the entire (full-stack) process.
-                <br />
-                I am also open collaboration and freelance work.
-                <br />
-                <br />
-                My Toolbox:
-            </p>
-        </div>
-
-        <div class="icon-container">
-            <div class="icon-box">
-                <div class="icon">
-                    <DiHtml5 />
-                </div>
-                <p>HTML</p>
-            </div>
-            <div class="icon-box">
-                <div class="icon">
-                    <DiCss3 />
-                </div>
-                <p>CSS</p>
-            </div>
-            <div class="icon-box">
-                <div class="icon">
-                    <DiJavascript1 />
-                </div>
-                <p>JavaScript</p>
-            </div>
-            <div class="icon-box">
-                <div class="icon">
-                    <DiReact />
-                </div>
-                <p>React.js</p>
-            </div>
-            <div class="icon-box">
-                <div class="icon">
-                    <DiNodejsSmall />
-                </div>
-                <p>Node.js</p>
-            </div>
-            <div class="icon-box">
-                <div class="icon">
-                    <DiPostgresql />
-                </div>
-                <p>Postgres</p>
-            </div>
-            <div class="icon-box">
-                <div class="icon">
-                    <DiGithubBadge />
-                </div>
-                <p>GitHub</p>
-            </div>
-            <div class="icon-box">
-                <div class="icon">
-                    <DiVisualstudio />
-                </div>
-                <p>Visual Studio</p>
-            </div>
-        </div>
-
-        <div class="email-container">
+        <div class="contact-container">
             <h2>Get In Touch</h2>
-            <p>Don't be shy to send me a quick Hello or maybe a job or proposal. 
-                I am always looking for opportunity to grow, feel free to send
-                over tips, suggestions, and/or resources.
+            <p>
+                I am actively looking for software developer role, also open to
+                collaboration, and freelance work.
+                <br />
+                Otherwise don't be shy to send me a quick Hello. And I am always
+                open to opportunity for growth, so feel free to send over tips, suggestions,
+                and/or resources.
             </p>
+            <br>
             <a class="email-link" href="mailto:vangmaihlee@ymail.com"
                 >Say Hello</a
             >
+        </div>
+
+        <div class="tool-container">
+            <p>My Toolbox:</p>
+
+            <div class="icon-container">
+                <div class="icon-box">
+                    <div class="icon">
+                        <DiHtml5 />
+                    </div>
+                    <p>HTML</p>
+                </div>
+                <div class="icon-box">
+                    <div class="icon">
+                        <DiCss3 />
+                    </div>
+                    <p>CSS</p>
+                </div>
+                <div class="icon-box">
+                    <div class="icon">
+                        <DiJavascript1 />
+                    </div>
+                    <p>JavaScript</p>
+                </div>
+                <div class="icon-box">
+                    <div class="icon">
+                        <DiReact />
+                    </div>
+                    <p>React.js</p>
+                </div>
+                <div class="icon-box">
+                    <div class="icon">
+                        <DiNodejsSmall />
+                    </div>
+                    <p>Node.js</p>
+                </div>
+                <div class="icon-box">
+                    <div class="icon">
+                        <DiPostgresql />
+                    </div>
+                    <p>Postgres</p>
+                </div>
+                <div class="icon-box">
+                    <div class="icon">
+                        <DiGithubBadge />
+                    </div>
+                    <p>GitHub</p>
+                </div>
+                <div class="icon-box">
+                    <div class="icon">
+                        <DiVisualstudio />
+                    </div>
+                    <p>Visual Studio</p>
+                </div>
+            </div>
         </div>
     </div>
 </main>
@@ -95,12 +90,8 @@
         line-height: 1.5em;
         height: 100%;
     }
-    .email-container {
+    .contact-container {
         width: 80%;
-        display: flex;
-        flex-direction: column;
-
-        align-items: center;
     }
     .email-link {
         cursor: pointer;
@@ -109,8 +100,10 @@
         border-radius: 8px;
         text-decoration: none;
         color: grey;
-        margin-top: 2rem;
         width: 20%;
+    }
+    a{
+        margin-top: 3rem;
     }
     .email-link:hover {
         background-color: rgb(195, 141, 141);
@@ -121,25 +114,30 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         margin: auto;
         text-decoration-skip-ink: none;
         background-color: rgba(201, 76, 76, 0.3);
         height: 100%;
-        justify-content: center;
-        /* padding: 4rem 0rem 4rem 0rem; */
-        /* margin-top: 10rem; */
-    }
-    .inner-container {
-        width: 80%;
     }
     .icon-container {
         width: 60%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        align-content: space-between;
+        align-items: center;
         justify-content: center;
-        margin-top: 1rem;
+        align-content: space-between;
+    }
+
+    .tool-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+
     }
     .icon {
         width: 72px;

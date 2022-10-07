@@ -38,15 +38,15 @@
         width: 100%;
         margin: auto;
         text-align: center;
-        height: 100%;
 
     }
     div {
         margin: 5rem 0rem 0rem 20rem;
         max-width: 60%;
+    }
+    .modal{
         height: 100%;
     }
-
     p {
         line-height: 1.75em;
         border-top: 3px solid black;
@@ -58,34 +58,33 @@
     #three {
         border-right: 3px solid black;
     }
-    #one::before {
+    /* #one::before {
         content: "Degree";
         left: 100%;
         margin-left: -20px;
-    }
+    } */
     #two,
     #four {
         border-left: 3px solid black;
     }
-    #two::before {
+    /* #two::before {
         content: "Career";
         right: 100%;
-        margin-right: -20px;
-    }
+        margin-right: -20px; 
+    }*/
     #three {
         border-right: 3px solid black;
     }
-    #three::before {
+    /* #three::before {
         content: "Hunt";
         left: 100%;
         margin-left: -20px;
-    }
-
-    #four::before {
+    } */
+    /* #four::before {
         content: "Goals";
         right: 100%;
         margin-right: -20px;
-    }
+    } */
 
     p::before {
         border-radius: 50%;
